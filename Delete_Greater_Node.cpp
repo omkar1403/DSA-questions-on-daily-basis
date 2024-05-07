@@ -14,26 +14,38 @@
 class Solution {
 public:
     ListNode* removeNodes(ListNode* head) {
-        ListNode* cur = head;
-        stack<ListNode*> stack;
-        
-        while (cur != NULL) {
-            while (!stack.empty() && stack.top()->val < cur->val) {
-                stack.pop();
+          ListNode* curr=head;
+        stack<int>st;
+        int top=0;
+        while(curr!=NULL){
+            int data=curr->val;
+            if(st.empty() || st.top()>=data){
+                st.push(data);
+            }else{
+                while(!st.empty() && st.top()<data){
+                    st.pop();
+                }
+                st.push(data);
             }
-            stack.push(cur);
-            cur = cur->next;
+            curr=curr->next;
         }
-        
-        ListNode* nxt = nullptr;
-        while (!stack.empty()) {
-            cur = stack.top();
-            stack.pop();
-            cur->next = nxt;
-            nxt = cur;
+        ListNode* temp=new ListNode(0);
+    
+        stack<int>st1;
+        while(!st.empty()){
+            st1.push(st.top());
+            st.pop();
         }
-        
-        return cur;
+        ListNode* curr1=temp;
+     
+        while(!st1.empty()){
+            curr1->next=new ListNode(st1.top());
+            curr1=curr1->next;
+            st1.pop();
+        }
+        ListNode*temp1=temp;
+        temp1=temp1->next;
+        return temp1;
     }
 };
 
