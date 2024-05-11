@@ -1,7 +1,19 @@
 /* here we just maintain one count varibale soo and then we just keep increasing if it is equal else 
 we will intialise it if it is equal if we have update the dp array then we woll initialise the count
 else if dp[i]==dp[j]+1; that are equal then we will increament this count by previous index  and we just keep 
-maxi for this and we will count the total ways*/
+maxi for this and we will count the total ways
+
+1)if( arr[j] < arr[i] && dp[j+1] > dp[i]), in this case we get a new LIS of greater length, 
+therefore the number of LIS ending at arr[i], is the same as number of LIS ending at arr[j] 
+as we simply append the element arr[j] to all those LIS. In simple terms, ct[i] = ct[j]. 
+Try to dry run this example to understand: [1, 2, 3],
+
+
+2)if( arr[j] < arr[i] && dp[j+1]==dp[i]) in this case we get a new LIS of same length
+ at which the ct[i] is originally holding the value for. Therefore the new ct[j] value will be 
+ the number of LIS that was given by its original value plus the number of LIS that ends at 
+ element arr[j] at length dp[j]. In simple terms, ct[i] = ct[i] + ct[j]. Try to dry run this example to understand: [1, 5, 6, 10].
+*/
 
 
 
