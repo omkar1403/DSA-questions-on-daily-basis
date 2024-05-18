@@ -1,4 +1,5 @@
-/*yaha ham loop run karenge in which we run a loop from i to j and hamara base case hai (i>j) return 0
+/*PALINDROME PARTITION 2 
+yaha ham loop run karenge in which we run a loop from i to j and hamara base case hai (i>j) return 0
 if it is palindrome then we add a cost 1+remaining partition and maintain a mini and then maintain a dp
 and return it*/
 
