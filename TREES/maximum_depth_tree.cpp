@@ -3,19 +3,18 @@ last me uske jitne bhi rows hai vo return kar diye accordingly means output.size
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
-       vector<vector<int>>output;
        queue<TreeNode*>q;
        if(root==NULL){
         return 0;
        }
+       int count=0;
        q.push(root);
        while(!q.empty()){
        int k=q.size();
-       vector<int>ans;
-       for(int i=0;i<k;i++){
+       count++;
+      for(int i=0;i<k;i++){
         TreeNode* node=q.front();
 
-         ans.push_back(node->val);
            q.pop();
            if(node->left !=NULL){
         q.push(node->left);
@@ -26,10 +25,9 @@ public:
           
        }
        
-       output.push_back(ans);
 
        }
-       return output.size();
+       return count;
 
     }
 };

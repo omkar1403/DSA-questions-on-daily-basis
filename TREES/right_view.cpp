@@ -16,6 +16,8 @@ void func(TreeNode* node,int level,vector<int>&ans){
     func(node->left,level+1,ans);   //after that we will take the element of the left and increase level from 1
 }
 
+//ham similar approach left side view ke liye bhi use kar sakte hai just we need to take the left side first
+
 public:
     vector<int> rightSideView(TreeNode* root) {
         vector<int>ans;
