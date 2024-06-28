@@ -1,4 +1,5 @@
-/*here we have to make the pathvis[node]=0 again soo that it will predict whether it is making cycle or not*/
+/*here we have to make the pathvis[node]=0 again soo that it will predict whether it is making cycle or not
+time complexity is O(V+E)*/
 
 
 bool dfs(int node, vector<int>adj[], int vis[], int pathvis[]) {

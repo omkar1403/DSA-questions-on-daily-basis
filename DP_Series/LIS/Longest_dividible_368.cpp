@@ -1,5 +1,6 @@
 /*In this we have maintain the hash table to print the array soo that we can print the elements and we took 
-last index soo that from last index we can print the array */
+last index soo that from last index we can print the array agar samjh hash ka jo index hai vo index ke equal nahi
+hoga khud ke tab tak ham loop chalyenge and this is the way to print the  characters*/
 
 
 vector<int> divisibleSet(vector<int>& arr) {

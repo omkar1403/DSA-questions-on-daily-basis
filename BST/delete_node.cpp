@@ -13,9 +13,9 @@ class Solution {
         }else if(root->right==NULL){
             return root->left;
         }
-        TreeNode* rightchild=root->right;
+        TreeNode* rightchild=root->right;//right child se link connect karenge
         TreeNode* lastright=findlast(root->left);
-        lastright->right=rightchild;
+        lastright->right=rightchild; //left node ka rightmost child se rightchild connect karenge
         return root->left;
     }
 

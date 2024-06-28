@@ -12,7 +12,6 @@ int solve(int i,vector<int>&dp){
   }
   int take=solve(i-1,dp);
   int notake=0;
-  
   notake=solve(i-2,dp);
   
   return dp[i]=take+notake;

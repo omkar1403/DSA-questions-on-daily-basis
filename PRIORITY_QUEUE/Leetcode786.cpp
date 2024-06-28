@@ -53,3 +53,4 @@ vector<int> kthSmallestPrimeFraction(vector<int>& arr, int k) {
         }
 
         return {pq.top().second.first,pq.top().second.second};
+        

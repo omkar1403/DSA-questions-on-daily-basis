@@ -1,4 +1,4 @@
-/*V.V.IMP. we have to make the unique array by increament so 
+/*V.V.IMP. we have to make the unique array by increament so first we will sort the elements
 hamne kya kiya ki agar koi element ye less than or equal to hoga to we will count the moves
 else we will increament the ans as nums[i] and agar 
 hame similar elements mil gaye then we will increament the ans and then take absolute of the given 

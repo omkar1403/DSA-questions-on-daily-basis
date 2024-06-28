@@ -26,7 +26,6 @@ int findNumberOfLIS(vector<int>& arr) {
 
     vector<int> dp(n, 1); // dp[i] stores the length of the LIS ending at arr[i]
     vector<int> ct(n, 1); // ct[i] stores the count of LIS ending at arr[i]
-
     int maxi = 1; // Initialize the maximum length as 1
 
     for (int i = 0; i < n; i++) {

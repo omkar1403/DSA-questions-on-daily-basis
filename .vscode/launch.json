@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "i:/DSA",
-      "program": "i:/DSA/build/Debug/outDebug",
+      "cwd": "i:/DSA/DP_Series/LIS",
+      "program": "i:/DSA/DP_Series/LIS/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
