@@ -1,4 +1,44 @@
 /*we have to ensure that no two adjacent will have the same color and color it with 0 and 1*/
+
+
+bool dfs(vector<vector<int>>& graph,vector<int>&color,int node,int color1){
+    color[node]=color1;
+    for(auto it:graph[node]){
+        if(color[it]==-1){   //if it -1
+            if(dfs(graph,color,it,!color1)==false){  //if it return false
+             return false;  //return false
+            }
+        }else if(color[it]==color1){  //if adjacent color is equal to the previous color
+            return false;   //return false
+        }
+    }
+    return true;  //return true
+}
+
+public:
+    bool isBipartite(vector<vector<int>>& graph) {
+        int n=graph.size();
+        vector<int>color(n);
+        for(int i=0;i<n;i++){  //initially mark all the color -1
+            color[i]=-1;
+        }
+        for(int i=0;i<n;i++){
+            if(color[i]==-1){  //if it is -1
+           if(dfs(graph,color,i,0)==false){ //if it is false
+                return false;  //return false;
+           }
+           }
+   
+        }
+        return true; //return true;
+
+    }
+
+
+
+
+
+
   
   
   bool isBipartite(vector<vector<int>>& graph) {
