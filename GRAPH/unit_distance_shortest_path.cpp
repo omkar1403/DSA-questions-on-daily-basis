@@ -5,7 +5,7 @@ vector<int> shortestPath(vector<vector<int>>& edges, int N,int M, int src){
            adj[it[0]].push_back(it[1]);  //here it is undirected graph so we push both the edges
            adj[it[1]].push_back(it[0]);
        }
-       
+
        
        for(int i=0;i<N;i++){
            dist[i]=1e9;

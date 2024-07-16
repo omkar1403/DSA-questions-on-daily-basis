@@ -21,7 +21,7 @@ for(int i=ind;i<s.length();i++){
  if(palindrome(s,ind,i)){
  ans.push_back(s.substr(ind,i-ind+1));
  solve(s,output,ans,n,i+1);
- ans.pop_back();                     
+ ans.pop_back();                  
   }
 }
 }

@@ -2,15 +2,13 @@
 then ham hoga to continue karenge else ham cur me push karke count increament karenge and then ham pop bhi karneg
 soo  that vo loop chalta rahe aur elements add hote rahe and return the count*/
 
-
-
 class Solution {
  private:
     int helper(vector<int>& nums, int k, vector<int>& cur, int start) {
         int cnt = 0;
         for (int i = start; i < nums.size(); ++i) {
             if (!test(cur, nums[i], k))
-                continue;
+                    continue;
             cur.push_back(nums[i]);
             cnt++;
             cnt += helper(nums, k, cur, i + 1);

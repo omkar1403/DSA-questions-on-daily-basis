@@ -13,7 +13,7 @@ bool func(TreeNode* node,vector<int>&ans,int val1){
      ans.push_back(node->val);
      if(node->val==val1){
         return true;
-     }
+     } 
      if(func(node->left,ans,val1) || func(node->right,ans,val1)){
         return true;
      }
@@ -36,7 +36,7 @@ public:
         };
         if(func(root,ans2,node2->val)){
             func(root,ans2,node2->val);
-        }
+        } 
 
 
         set<int>s1(ans1.begin(),ans1.end());

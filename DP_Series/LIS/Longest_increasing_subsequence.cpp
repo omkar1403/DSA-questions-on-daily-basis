@@ -6,9 +6,6 @@ ERROR and we have to take the extra range of (n+1) because we are considering -1
 
 
 
-
-
-
 class Solution {
 int maxi(vector<int>& nums,int ind,int prev,int n,vector<vector<int>>&dp){
     if(ind==n){

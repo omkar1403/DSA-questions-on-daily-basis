@@ -7,7 +7,7 @@
          if(func(adj,i,node,vis)){ //here if any of them return true then we will return true 
              return true;
          }
-         }else if(i!=parent){  //if the node is not parent then we will retirn true
+         }else if(i!=parent){  //if the node is not parent then we will return true
              return true;
          }
      }

@@ -24,7 +24,7 @@ int func(long long ind,string &s,vector<long long>&dp){
     }
     if(dp[ind]!=-1){
         return dp[ind];
-    }
+    } 
    long long mini=1e9;
     for(long long i=ind;i<s.length();i++){
         if(ispalindrome(s,ind,i)){

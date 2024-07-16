@@ -2,9 +2,6 @@
 soo hamne when we sell it then we just increment the index by ind+2 soo that it can move to next to next index */
 
 
-
-
-
 int f(vector<int>& a,int ind,int n,int buy,vector<vector<int>>&dp){
 
     if(ind>=n){

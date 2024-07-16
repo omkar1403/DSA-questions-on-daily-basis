@@ -10,7 +10,7 @@ int min1(string& s1, string& s2,int i,int j,vector<vector<int>>&dp){
         return j+1;
     }
     if(j<0){
-        return i+1;
+        return i+1; 
     }
     if(dp[i][j]!=-1){
         return dp[i][j];

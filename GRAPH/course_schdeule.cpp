@@ -6,7 +6,6 @@ V.V.V.V.IMPORTANT first see adjacency list kaise create karte hai agar cycle hog
         vector<int> adj[n];//IMP
         vector<int> indegree(n, 0);
        
-
      
        for(auto it:graph){
         adj[it[0]].push_back(it[1]);//v.v.IMPORTANT see how we can create adjacency list

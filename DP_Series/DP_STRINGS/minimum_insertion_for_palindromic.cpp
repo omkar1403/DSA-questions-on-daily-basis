@@ -2,8 +2,6 @@
   hamne ussse longest commmon subsequence find kiya soo hence we get the palindromic sequence and now 
   jitne bhi sequence aayenge unko (n-unki length) karne pe we will get minimum insertion*/
 
-
-
 class Solution {
 
 int lcs(string s1, string s2) {
@@ -18,8 +16,7 @@ int lcs(string s1, string s2) {
     }
     for (int i = 0; i <= m; i++) {
         dp[0][i] = 0;
-    }
-
+    } 
     for (int ind1 = 1; ind1 <= n; ind1++) {
         for (int ind2 = 1; ind2 <= m; ind2++) {
             if (s1[ind1 - 1] == s2[ind2 - 1])

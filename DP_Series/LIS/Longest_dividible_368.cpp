@@ -5,7 +5,6 @@ hoga khud ke tab tak ham loop chalyenge and this is the way to print the  charac
 
 vector<int> divisibleSet(vector<int>& arr) {
     int n = arr.size();
-
     // Sort the array in ascending order
     sort(arr.begin(), arr.end());
 
