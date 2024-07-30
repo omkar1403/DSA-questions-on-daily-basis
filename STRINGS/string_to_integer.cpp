@@ -41,9 +41,7 @@ public:
       result = (result * 10) + digit; 
 
       ++index;
-    }
-     
-    return isNegative ? -result : result;
-
+    }   
+    return isNegative ? -result : result
     }
 };
