@@ -12,7 +12,7 @@ class Solution {
             return root->right;
         }else if(root->right==NULL){
             return root->left;
-        }
+        } 
         TreeNode* rightchild=root->right;//right child se link connect karenge
         TreeNode* lastright=findlast(root->left);
         lastright->right=rightchild; //left node ka rightmost child se rightchild connect karenge
